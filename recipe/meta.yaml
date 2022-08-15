@@ -16,6 +16,8 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - cmake
     - make   # [not win]
     - ninja  # [win]
@@ -37,4 +39,3 @@ extra:
   recipe-maintainers:
     - xylar
     - seanyen
-    - xylar
