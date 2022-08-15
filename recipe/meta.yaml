@@ -1,16 +1,16 @@
 {% set name = "azure-macro-utils-c" %}
-{% set version = "2020.03.23" %}
+{% set version = "2022.08.09" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  - url: https://github.com/Azure/azure-macro-utils-c/archive/59313d7ec9fa4b423e1bd0a24fdba792bfb29262.zip
-    sha256: 178736403edfea6f48a1838705ffa53e4f496f80bf78f9a24c87fe85693e3299
+  - url: https://github.com/Azure/macro-utils-c/archive/3cddd3dbe44c16f0043731dc93419e24bf16c8a8.zip
+    sha256: 2b10da08ecf66967d19598223b6fb1fd9586f40b7a52edf1ddacf60276ffcacd
 
 build:
-  number: 1
+  number: 0
   run_exports:
     - {{ pin_subpackage(name, exact=True) }}
 
