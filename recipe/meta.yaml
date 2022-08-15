@@ -24,8 +24,8 @@ requirements:
 
 test:
   commands:
-    - if not exist %LIBRARY_PREFIX%\\include\\azure_macro_utils\\macro_utils.h exit 1  # [win]
-    - test -f "${PREFIX}/include/azure_macro_utils/macro_utils.h"  # [not win]
+    - if not exist %LIBRARY_PREFIX%\\include\\macro_utils\\macro_utils.h exit 1  # [win]
+    - test -f "${PREFIX}/include/macro_utils/macro_utils.h"  # [not win]
 
 about:
   home: https://github.com/Azure/azure-macro-utils-c
