@@ -7,27 +7,30 @@ package:
 
 source:
   - url: https://github.com/Azure/azure-macro-utils-c/archive/59313d7ec9fa4b423e1bd0a24fdba792bfb29262.zip
-    sha256: 17fd40a533bff252fa8c6be015eb45ed62e61335afbab0239c18f97a9bd2d8fc
+    sha256: 178736403edfea6f48a1838705ffa53e4f496f80bf78f9a24c87fe85693e3299
 
 build:
-  number: 0
-  skip: true  # [not win64]
+  number: 1
   run_exports:
     - {{ pin_subpackage(name, exact=True) }}
 
 requirements:
   build:
-    - vs2017_win-64          # [win64]
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - cmake
-    - ninja
+    - make   # [not win]
+    - ninja  # [win]
 
 test:
   commands:
-    - if not exist %LIBRARY_PREFIX%\\include\\azure_macro_utils\\macro_utils.h exit 1
+    - if not exist %LIBRARY_PREFIX%\\include\\azure_macro_utils\\macro_utils.h exit 1  # [win]
+    - test -f "${PREFIX}/include/azure_macro_utils/macro_utils.h"  # [not win]
 
 about:
   home: https://github.com/Azure/azure-macro-utils-c
   license: MIT
+  license_family: MIT
   license_file: LICENSE
   summary: |
     Microsoft Azure IoT SDKs - macro utils for C
