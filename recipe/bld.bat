@@ -1,6 +1,4 @@
-:: MSVC is preferred.
-set CC=cl.exe
-set CXX=cl.exe
+@echo on
 
 mkdir build
 cd build
