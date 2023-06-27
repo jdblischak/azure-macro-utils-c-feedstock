@@ -8,4 +8,4 @@ cmake \
     -DCMAKE_INSTALL_PREFIX=${PREFIX} \
     ..
 
-cmake --build . --target install
+cmake --build . --config Release --target install
