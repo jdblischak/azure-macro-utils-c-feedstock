@@ -1,11 +1,11 @@
-About azure-macro-utils-c
-=========================
+About azure-macro-utils-c-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-macro-utils-c-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Azure/azure-macro-utils-c
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/azure-macro-utils-c-feedstock/blob/main/LICENSE.txt)
 
 Summary: Microsoft Azure IoT SDKs - macro utils for C
 
@@ -31,21 +31,21 @@ Current build status
               <td>linux_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9383&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/azure-macro-utils-c-feedstock?branchName=main&jobName=linux&configuration=linux_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/azure-macro-utils-c-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9383&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/azure-macro-utils-c-feedstock?branchName=main&jobName=osx&configuration=osx_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/azure-macro-utils-c-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9383&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/azure-macro-utils-c-feedstock?branchName=main&jobName=win&configuration=win_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/azure-macro-utils-c-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
                 </a>
               </td>
             </tr>
@@ -177,6 +177,7 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@jdblischak](https://github.com/jdblischak/)
 * [@seanyen](https://github.com/seanyen/)
 * [@xylar](https://github.com/xylar/)
 
