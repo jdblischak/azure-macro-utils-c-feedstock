@@ -1,20 +1,10 @@
-:: MSVC is preferred.
-set CC=cl.exe
-set CXX=cl.exe
+@echo on
 
-mkdir build
+rem directory "build" already exists
 cd build
 
-cmake ^
-    -G "Ninja" ^
-    -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
-    -DCMAKE_BUILD_TYPE=Release ^
-    -DCMAKE_INSTALL_SYSTEM_RUNTIME_LIBS_SKIP=True ^
-    -DBUILD_SHARED_LIBS=ON ^
-    -Duse_installed_dependencies=ON ^
-    %SRC_DIR%
+cmake -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ..
 if errorlevel 1 exit 1
 
-:: Install.
-cmake --build . --config Release --target install
+cmake --build . --target install
 if errorlevel 1 exit 1
